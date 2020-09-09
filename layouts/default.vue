@@ -23,3 +23,8 @@ export default {
   }
 };
 </script>
+<style>
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgb(220 232 240), 0 2px 4px -1px rgb(225 230 235);
+}
+</style>
