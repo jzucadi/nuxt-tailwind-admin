@@ -1,14 +1,10 @@
 <template>
-  <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-    <div class="bg-white border rounded shadow p-2">
+  <div class="w-full md:w-1/2 xl:w-1/4 p-3">
+    <div class="bg-white border rounded shadow-md p-2">
       <div class="flex flex-row items-center">
-        <div class="flex-shrink pr-4">
-          <div :class="bgIconColor" class="rounded p-3">
-            <i :class="icon" class="fa fa-2x fa-fw fa-inverse"></i>
-          </div>
-        </div>
         <div class="flex-1 text-right md:text-center">
           <h5 class="font-bold uppercase text-gray-500">{{ title }}</h5>
+          <hr />
           <h3 class="font-bold text-3xl">
             {{ value }}
             <span v-if="showArrow" :class="bgArrowColor"
@@ -75,3 +71,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+hr {
+  border-top: 1px solid gainsboro;
+}
+</style>
