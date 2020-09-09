@@ -16,7 +16,7 @@ export default {
     Footer
   },
   head: {
-    title: 'Nuxt.js Admin Starter',
+    title: 'Client Portal',
     bodyAttrs: {
       class: 'bg-gray-100 font-sans leading-normal tracking-normal'
     }

@@ -1,6 +1,6 @@
 <template>
   <div class="w-full md:w-1/2 p-3">
-    <Box title="Graph">
+    <Box title="Case Log">
       <LineChart :height="200" :options="options" :chartdata="chartdata" />
     </Box>
   </div>
@@ -30,7 +30,7 @@ export default {
         ],
         datasets: [
           {
-            label: 'Views',
+            label: 'Open Tasks',
             data: [65, 59, 80, 81, 56, 55, 40],
             fill: false,
             borderColor: 'rgb(75, 192, 192)',

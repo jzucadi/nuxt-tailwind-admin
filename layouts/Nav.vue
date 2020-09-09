@@ -1,5 +1,5 @@
 <template>
-  <nav id="header" class="bg-white fixed w-full z-10 top-0 shadow">
+  <nav id="header" class="bg-white fixed w-full z-10 top-0 shadow-md">
     <div
       class="w-full container mx-auto flex flex-wrap items-center mt-0 pt-3 pb-3 md:pb-0"
     >
@@ -8,7 +8,7 @@
           class="text-gray-900 text-base xl:text-xl no-underline hover:no-underline font-bold"
           href="#"
         >
-          <i class="fas fa-sun text-orange-600 pr-3"></i> Admin Day Mode
+          <i class="fas fa-tint text-blue-600 pr-0"></i> Ocean Trust
         </a>
       </div>
       <div class="w-1/2 pr-0">
@@ -17,13 +17,9 @@
             <button
               id="userButton"
               class="flex items-center focus:outline-none mr-3"
+              style="position: relative;top: 15px;z-index: 999;"
             >
-              <img
-                class="w-8 h-8 rounded-full mr-4"
-                src="http://i.pravatar.cc/300"
-                alt="Avatar of User"
-              />
-              <span class="hidden md:inline-block">Hi, User </span>
+              <span class="hidden md:inline-block">Welcome, John </span>
               <svg
                 class="pl-2 h-2"
                 version="1.1"
@@ -56,6 +52,13 @@
                     href="#"
                     class="px-4 py-2 block text-gray-900 hover:bg-gray-400 no-underline hover:no-underline"
                     >Notifications</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="px-4 py-2 block text-gray-900 hover:bg-gray-400 no-underline hover:no-underline"
+                    >Settings</a
                   >
                 </li>
                 <li><hr class="border-t mx-2 border-gray-400" /></li>
@@ -96,16 +99,16 @@
           <li class="mr-6 my-2 md:my-0">
             <a
               href="#"
-              class="block py-1 md:py-3 pl-1 align-middle text-orange-600 no-underline hover:text-gray-900 border-b-2 border-orange-600 hover:border-orange-600"
+              class="block py-1 md:py-3 pl-1 align-middle text-blue-600 no-underline hover:text-gray-900 border-b-2 border-blue-300 hover:border-blue-400"
             >
-              <i class="fas fa-home fa-fw mr-3 text-orange-600"></i
-              ><span class="pb-1 md:pb-0 text-sm">Home</span>
+              <i class="fas fa-tachometer-alt fa-fw mr-3 text-blue-400"></i
+              ><span class="pb-1 md:pb-0 text-sm">Dashboard</span>
             </a>
           </li>
           <li class="mr-6 my-2 md:my-0">
             <a
               href="#"
-              class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-pink-500"
+              class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-blue-400"
             >
               <i class="fas fa-tasks fa-fw mr-3"></i
               ><span class="pb-1 md:pb-0 text-sm">Tasks</span>
@@ -114,53 +117,22 @@
           <li class="mr-6 my-2 md:my-0">
             <a
               href="#"
-              class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-purple-500"
+              class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-blue-400"
             >
-              <i class="fa fa-envelope fa-fw mr-3"></i
-              ><span class="pb-1 md:pb-0 text-sm">Messages</span>
+              <i class="fa fa-file-contract fa-fw mr-3"></i
+              ><span class="pb-1 md:pb-0 text-sm">Documents</span>
             </a>
           </li>
           <li class="mr-6 my-2 md:my-0">
             <a
               href="#"
-              class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-green-500"
+              class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-blue-100"
             >
-              <i class="fas fa-chart-area fa-fw mr-3"></i
-              ><span class="pb-1 md:pb-0 text-sm">Analytics</span>
-            </a>
-          </li>
-          <li class="mr-6 my-2 md:my-0">
-            <a
-              href="#"
-              class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-900 border-b-2 border-white hover:border-red-500"
-            >
-              <i class="fa fa-wallet fa-fw mr-3"></i
-              ><span class="pb-1 md:pb-0 text-sm">Payments</span>
+              <i class="fas fa-users fa-fw mr-3"></i
+              ><span class="pb-1 md:pb-0 text-sm">Users</span>
             </a>
           </li>
         </ul>
-
-        <div class="relative pull-right pl-4 pr-4 md:pr-0">
-          <input
-            type="search"
-            placeholder="Search"
-            class="w-full bg-gray-100 text-sm text-gray-800 transition border focus:outline-none focus:border-gray-700 rounded py-1 px-2 pl-10 appearance-none leading-normal"
-          />
-          <div
-            class="absolute search-icon"
-            style="top: 0.375rem;left: 1.75rem;"
-          >
-            <svg
-              class="fill-current pointer-events-none text-gray-800 w-4 h-4"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
-              ></path>
-            </svg>
-          </div>
-        </div>
       </div>
     </div>
   </nav>
